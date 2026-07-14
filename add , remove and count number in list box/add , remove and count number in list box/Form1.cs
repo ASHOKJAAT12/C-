@@ -32,10 +32,8 @@ namespace add___remove_and_count_number_in_list_box
             }
             else
             {
-                string str = listBox1.SelectedItem.ToString();
-                int n = listBox1.Items.Count;
-                listBox1.Items.Remove(n);
-                MessageBox.Show("remove number");
+                listBox1.Items.RemoveAt(listBox1.Items.Count - 1);
+                MessageBox.Show("Last item removed.");
             }
         }
 
